@@ -1,0 +1,104 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Foto Fondo azul rallado.jpg'); /* Asegúrate de que la imagen esté en el mismo directorio */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    color: lightgray;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Botones con borde verde */
+button {
+    padding: 10px 15px;
+    border: 3px solid lightgreen;
+    background: transparent;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Botones en móvil: uno debajo del otro */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos de productos */
+.producto {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.btn-comprar {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-comprar:hover {
+    background-color: darkgreen;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-float img {
+    width: 50px;
+}
